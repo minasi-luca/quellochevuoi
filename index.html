@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area 51 e l'Esistenza degli Alieni</title>
+    <link rel="stylesheet" href="stile.css">
+
+</head>
+<body>
+    <header>
+        <h1>Area 51 e l'Esistenza degli Alieni</h1>
+    </header>
+
+    <nav>
+        <label for="contentSelector">Seleziona il contenuto:</label>
+        <select id="contentSelector">
+            <option value="area51">Area 51</option>
+            <option value="alieni">Esistenza degli Alieni</option>
+        </select>
+    </nav>
+
+    <main>
+        <div id="area51">
+            <h2>Area 51</h2>
+            <p>L'Area 51 è una base militare situata nel deserto del Nevada, negli Stati Uniti. È diventata famosa per le teorie della cospirazione che circondano le sue attività, tra cui la ricerca sugli UFO e gli alieni.</p>
+            <p>Tuttavia, gran parte delle attività dell'Area 51 sono classificate e coperte da segretezza militare, il che ha alimentato molte speculazioni e teorie del complotto.</p>
+            <img src="./images/area511.jpg">
+        </div>
+
+        <div id="alieni" style="display: none;">
+            <h2>Esistenza degli Alieni</h2>
+            <p>La questione dell'esistenza degli alieni è un argomento dibattuto da molti anni. Mentre ci sono avvistamenti di UFO e testimonianze di presunte esperienze di contatti alieni, non ci sono prove concrete che confermino l'esistenza degli alieni.</p>
+            <p>La ricerca scientifica continua a cercare segnali di vita extraterrestre, ma finora non sono stati trovati dati definitivi.</p>
+            <img src="./images/alieno.jpg">
+        </div>
+    </main>
+
+    <script>
+        // Funzione per gestire la selezione del contenuto nel menu a tendina
+        const contentSelector = document.getElementById('contentSelector');
+        const area51Content = document.getElementById('area51');
+        const alieniContent = document.getElementById('alieni');
+
+        contentSelector.addEventListener('change', function() {
+            if (contentSelector.value === 'area51') {
+                area51Content.style.display = 'block';
+                alieniContent.style.display = 'none';
+            } else if (contentSelector.value === 'alieni') {
+                area51Content.style.display = 'none';
+                alieniContent.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

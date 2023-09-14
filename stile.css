@@ -1,0 +1,34 @@
+/* Stile per il titolo */
+h1 {
+    font-family: Arial, sans-serif; /* Utilizza il font Arial e altri font senza grazie come fallback */
+    font-size: 48px; /* Ingrandisce il titolo a 24px */
+    text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+    color: #333; /* Colore del testo */
+}
+
+/* Stile per i paragrafi */
+p {
+    font-family: Arial, sans-serif; /* Utilizza il font Arial e altri font senza grazie come fallback */
+    font-size: 32px; /* Dimensione del testo a 16px */
+    line-height: 1.5; /* Altezza della linea per una migliore leggibilità */
+    color: #000000; /* Colore del testo dei paragrafi */
+}
+body {
+    background-color: #000; /* Colore di sfondo nero */
+    overflow: hidden; /* Nasconde il contenuto che potrebbe sforare il body */
+}
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+body {
+    animation: animateBackground 3s linear infinite; /* Animazione dello sfondo */
+    background: linear-gradient(90deg, rgb(9, 255, 0), #09f, rgb(255, 0, 221)); /* Creazione di un gradiente colorato per lo sfondo */
+    background-size: 200% 200%; /* Imposta le dimensioni del gradiente */
+}
